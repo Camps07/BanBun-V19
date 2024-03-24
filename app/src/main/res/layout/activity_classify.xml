@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buffml.com.banbun.Classify"
+    tools:layout_editor_absoluteX="-9dp"
+    tools:layout_editor_absoluteY="-46dp">
+
+        <!--        <com.google.android.material.appbar.MaterialToolbar-->
+        <!--            android:id="@+id/toolbar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="?attr/actionBarSize"-->
+        <!--            android:background="?attr/colorPrimary"-->
+        <!--            app:title="BanBun"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"/>-->
+
+        <!--        <ImageView-->
+<!--            android:id="@+id/imageView3"-->
+<!--            android:layout_width="18dp"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/mPhotoImageView"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView2"-->
+<!--            app:srcCompat="@drawable/lessthan" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="18dp"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/mPhotoImageView"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/IndicationText"-->
+<!--            app:srcCompat="@drawable/greaterthan" />-->
+
+        <TextView
+            android:id="@+id/IndicationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="140dp"
+            android:text="LEGENDS:"
+            android:textColor="#004E4E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/mPhotoImageView"
+            app:layout_constraintTop_toBottomOf="@+id/mCameraButton" />
+
+        <TextView
+            android:id="@+id/NegativeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:text="1 is NEGATIVE"
+            android:textColor="#004E4E"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/buffLegend"
+            app:layout_constraintTop_toBottomOf="@+id/PositiveText" />
+
+        <TextView
+            android:id="@+id/PositiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="0 is POSITIVE"
+            android:textColor="#004E4E"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/posiLegend"
+            app:layout_constraintTop_toBottomOf="@+id/IndicationText" />
+
+        <TextView
+            android:id="@+id/ControlText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:text="2 is BUFFER"
+            android:textColor="#004E4E"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/buffLegend"
+            app:layout_constraintTop_toBottomOf="@+id/NegativeText" />
+
+        <TextView
+            android:id="@+id/buffLegend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/yellow_outline"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/ControlText"
+            app:layout_constraintStart_toEndOf="@+id/mPhotoImageView"
+            app:layout_constraintTop_toBottomOf="@+id/negaLegend" />
+
+        <TextView
+            android:id="@+id/posiLegend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/red_outline"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/PositiveText"
+            app:layout_constraintStart_toEndOf="@+id/mPhotoImageView"
+            app:layout_constraintTop_toBottomOf="@+id/mCameraButton" />
+
+        <TextView
+            android:id="@+id/negaLegend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/blue_outline"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/NegativeText"
+            app:layout_constraintStart_toEndOf="@+id/mPhotoImageView"
+            app:layout_constraintTop_toBottomOf="@+id/posiLegend" />
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></FrameLayout>
+
+
+        <!--            app:layout_constraintStart_toEndOf="@+id/mCameraButton"-->
+        <!--            app:layout_constraintHorizontal_bias="1.0"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/mDetectButton" />-->
+
+
+        <Button
+            android:id="@+id/mCameraButton"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/button_camera_bg"
+            android:text="@string/buttonTakePhoto"
+            android:textAllCaps="true"
+            android:textColor="#004E4E"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/mPhotoImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/mGalleryButton"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/button_gallery_bg"
+            android:text="@string/buttonSelectPhoto"
+            android:textAllCaps="true"
+            android:textColor="#004E4E"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/mPhotoImageView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Legends Icons -->
+
+
+        <ImageView
+            android:id="@+id/mPhotoImageView"
+            android:layout_width="186dp"
+            android:layout_height="330dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/descriptionImage"
+            app:layout_constraintBottom_toTopOf="@+id/mDetectButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.849"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@color/lightGray" />
+
+        <Button
+            android:id="@+id/mDetectButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/button_detect_bg"
+            android:text="@string/buttonDiagnose"
+            android:textAllCaps="true"
+            android:textColor="#004E4E"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/mResultTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/mResultTextView"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="56dp"
+            android:text="@string/defaultImage"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#004E4E"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--        <TextView-->
+<!--            android:id="@+id/mConfidenceTextView"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:text=""-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textSize="18dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mResultTextView" />-->
+
+
+        <!--        <include layout="@layout/layout_bottom_navigation"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

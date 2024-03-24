@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BanBun</string>
+    <string name="buttonSelectPhoto">Choose from Gallery</string>
+    <string name="buttonTakePhoto">Capture using Camera</string>
+    <string name="buttonDiagnose">Detect</string>
+    <string name="defaultImage">Default image set now...</string>
+    <string name="descriptionImage">View for displaying image</string>
+    <string name="processElisa">Steps to run an ELISA assay</string>
+</resources>

@@ -1,0 +1,3 @@
+0 Positive
+1 Inconclusive
+2 Negative

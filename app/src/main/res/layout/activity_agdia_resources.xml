@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buffml.com.banbun.AgdiaResources">
+
+    <TextView
+        android:id="@+id/AgdiaText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="User Guide: DAS-ELISA Reagent Set"
+        android:textColor="@color/greenAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/AgdiaText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/Title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Test Principle, Intended Use and Limitations"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/AgdiaText" />
+
+            <TextView
+                android:id="@+id/Text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="This product is intended for the qualitative detection of the target analyte via a direct, double antibody sandwich protocol known as DAS-ELISA. Upon successful completion of the test, samples containing the target analyte will turn yellow, due to the alkaline phosphatase enzyme label, while negatives will remain colorless. Visit the product webpage for information regarding host reactions, cross-reactions, alternate protocols, or other limitations."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Handling Information"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text1" />
+
+            <TextView
+                android:id="@+id/Text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Antibodies should be stored refrigerated (2 - 8 °C) between uses. All test materials should be warmed to room temperature (18-30 °C) before use. For materials provided please see the product webpage. The buffers necessary to run this assay can be purchased as buffer pack ACC 00111. Do not store user-prepared 1X buffers for more than one day."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Safety"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text2" />
+
+            <TextView
+                android:id="@+id/Text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:autoLink="web"
+                android:textColorLink="#034BC6"
+                android:text="Agdia recommends reading all relevant SDS sheets before using assay components: http://docs.agdia.com/datasheets.aspx."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Test Preparation"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text3" />
+
+            <TextView
+                android:id="@+id/Text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. Visit the product webpage to view buffer formulations, logsheet, and other documents.\n2. Record lot numbers of materials to be used in the test using the logsheet.\n3. Prepare a humid box by lining an airtight container with a wet paper towel.\n4. Mix both concentrated and diluted antibodies thoroughly before each use."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Prepare Capture Antibody"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text4" />
+
+            <TextView
+                android:id="@+id/Text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. Prepare the capture antibody (CAB) in a non-binding container, such as Agdia's sample cups (ACC 00960).\n2. Dilute the thoroughly-mixed CAB, per the dilution on the label, in 1X carbonate coating buffer (see example). You will need 100 μL of diluted CAB per well; a full plate will need 10 mL.\nExample: (Wells Used 16 x 100 μL) / 200' = 8 μL Capture Antibody\n'Bottle dilution will be either 100 or 200\n3. Thoroughly mix and pipette 100 μL of diluted CAB into each testwell of the provided high-bind microtiter plate.\n4. Incubate plate in the humid box for either 4 hours at room temperature (18-30 °C) or overnight at 2-8 °C.\n5. Coated plates should be used within 24 hours."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Positive and Negative Control Preparation"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text5" />
+
+            <TextView
+                android:id="@+id/Text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. Use General Extract Buffer (GEB) to hydrate fresh controls, according to label, at least five minutes before use. \n2. Recap and mix thoroughly.\n3. Use of frozen or aliquoted controls comes with increased stability risks and may not match expected O.D. values."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Sample Preparation and Plate Loading"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text6" />
+
+            <TextView
+                android:id="@+id/Text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. Sample symptomatic tissue if possible. Other plant parts may be tested, including asymptomatic tissue.\n2. At the time of testing, grind and dilute the samples at a 1:10 ratio with GEB.\nExample: 0.3g plant tissue, extracted with 3 mL of GEB.\n3. Empty coated plate contents and wash 3 times with 1X PBST.\n4. Tap plate dry using lint-free paper towel.\n5. Dispense 100 μL of the extracted samples, positive control, negative control, and GEB into the plate following your logsheet. \n6. Incubate plate in the humid box for either 2 hours at room temperature or overnight at 2-8 °C."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Prepare Enzyme Conjugate"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text7" />
+
+            <TextView
+                android:id="@+id/Text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. Prepare the enzyme conjugate (ECA) in a non-binding container, such as Agdia's sample cups (ACC 00960).\n2. Dilute the thoroughly-mixed ECA, per the dilution on the label, in 1X ECI buffer (see example). You will need 10 diluted ECA per well; a full plate will need 10 mL.\nExample: (Wells Used 16 x 100 μl) / 200 = 8μL Enzyme Conjugate\n'Bottle dilution will be either 100 or 200\n3. Wash the sample from the plate 8 times using 1X PBST.\n4. Tap plate dry using lint-free paper towel.\n5. Thoroughly mix and pipette 100 μL of diluted ECA into each testwell.\n6. Incubate plate in the humid box for 2 hours at room temperature."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Prepare Substrate"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text8" />
+
+            <TextView
+                android:id="@+id/Text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. Add 1 PNP substrate tablet per 5 mL of 1X PNP substrate buffer into a dedicated container and keep in the dark unt You will need 100 μl of diluted PNP solution per well; a full plate will need 10 mL. Ensure tablets are dissolved before\n2. Wash the ECA from the plate 8 times using 1X PBST.\n3. Tap plate dry using lint-free paper towel.\n4. Pipette 100 μL of dissolved PNP solution into each testwell.\n5. Incubate, protected from light, for 1 hour at room temperature."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Interpreting Results"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text9" />
+
+            <TextView
+                android:id="@+id/Text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. Visually inspect wells and remove bubbles, if present. Measure O.D. values with a spectrophotometer at 405 n 405 nm with a 650 nm blank.\n2. The test is valid if the positive and negative control O.D. results meet expected values (see Certificate of Analysis). \n3. Sample interpretations should be performed on a case-by-case basis. Plant tissue Interactions with ELISAS can greatly between plant species and even varieties. Certain healthy tissues can cause an elevated or higher than no O.D. value. In this case, a healthy sample(s) of the same species or variety is needed to determine the healthy average. \n4. Generally, positive and negative thresholds can be determined by using 2 times the healthy average. Any samples an O.D. value higher than 2 times the healthy average are positive, and samples with an O.D. value below 2 times healthy average are negative. An alterative method for threshold calculations is the healthy average plus 3 times standard deviation of the healthy sample set."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/Method"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/method"
+                app:layout_constraintTop_toBottomOf="@id/Text10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Text10.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="5. Positive O.D. values indicate the presence of the target pathogen (or in some cases, a closely related pathogen). V the product webpage to see if any other pathogens are known to cross-react with this test. As with all diagnostic toc Agdia recommends confirming all results with a secondary detection method before making any economic decisio (ex: discarding plants due to positive test results, etc.)."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Method"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Warranty"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text10.2" />
+
+            <TextView
+                android:id="@+id/Text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:autoLink="web"
+                android:textColorLink="#034BC6"
+                android:text="Agdia reagents are warrantied for performance issues that arise from manufacturer defect. See product packaging for relevant expiratic dates. Agdia's return policy can be found at www.agdia.com/customer-support/return-policy"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/Title12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Additional Information"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Text11" />
+
+            <TextView
+                android:id="@+id/Text12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:autoLink="web"
+                android:textColorLink="#034BC6"
+                android:text="If you would like more information on how to run ELISA, please see Agdia's FAQ section, http://www.aqdia.com/customer-support/frequen questions-and-troubleshooting. For further documentation, including this user guide, buffer formulations, and a logsheet, please see Agdia specific product webpages. For answers to your technical questions, please contact us at techsupport@agdia.com."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/Title12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/AgdiaLogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/agdialogo"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/TextAgdia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:textColorLink="#034BC6"
+                    android:text="Agdia, Inc.\n52642 Country Road 1\nElkhart, IN 46514\n574-264-2014 / 800-622-4342\nwww.agdia.com / info@agdia.com"
+                    android:textSize="12sp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/AgdiaLogo" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFEB3B</color> <!-- Yellow -->
+    <color name="colorPrimaryDark">#FBC02D</color> <!-- Darker Yellow -->
+    <color name="colorAccent">#FF9800</color> <!-- Orange-ish Yellow -->
+    <color name="lightGray">#CCCCCC</color>
+    <color name="black">#020202</color>
+    <color name="greenAccent">#004E4E</color>
+</resources>
+

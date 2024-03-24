@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buffml.com.banbun.MainActivity">
+
+    <ImageView
+        android:id="@+id/appLogoImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/banbun2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Bottom Navigation View -->
+
+    <TextView
+        android:id="@+id/appDescriptionTextView"
+        android:layout_width="325dp"
+        android:layout_height="256dp"
+        android:layout_marginBottom="88dp"
+        android:lineSpacingExtra="4dp"
+        android:text="BanBun is a mobile application that detects the presence and concentration of BBTV (Banana Bunchu Top Virus) on Cavendish bananas. This application uses a MobileNet-based CNN to process the images of ELISA plate."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:itemIconTint="@drawable/bottom_nav_icon_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

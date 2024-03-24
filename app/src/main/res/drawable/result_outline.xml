@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#00FFFFFF"/> <!-- Set the background color, e.g., white -->
+    <stroke
+        android:width="3dp"
+        android:color="#004E4E"/> <!-- Set the outline color to black -->
+</shape>
